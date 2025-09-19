@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Combiner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Combiner</h1>
+        <p>Upload two images and let AI merge them into a new creation!</p>
+
+        <div class="upload-section">
+            <div class="image-input">
+                <label for="imageUpload1">Image 1:</label>
+                <input type="file" id="imageUpload1" accept="image/*">
+                <div class="image-preview" id="preview1"></div>
+            </div>
+            <div class="image-input">
+                <label for="imageUpload2">Image 2:</label>
+                <input type="file" id="imageUpload2" accept="image/*">
+                <div class="image-preview" id="preview2"></div>
+            </div>
+        </div>
+
+        <button id="combineBtn">Combine Images</button>
+
+        <div class="loading-indicator" id="loadingIndicator">
+            <div class="spinner"></div>
+            <p>Combining images...</p>
+        </div>
+
+        <div class="output-section">
+            <h2>Combined Image:</h2>
+            <img id="outputImage" src="" alt="Combined Image" class="hidden">
+            <p id="outputPlaceholder" class="placeholder">Your combined image will appear here.</p>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
